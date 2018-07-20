@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 class SAP extends Component {
     constructor(props) {
         super(props);
-        this.state = {DIS: false};
-        this.handleClick =this.handleClick.bind(this);
+        this.state = {display:"block"};
+        this.handleClick= this.handleClick.bind(this)
     }
 
     handleClick() {
-        this.setState({ isShow:!this.state.isShow});
+        this.setState({display:this.state.display=="block"?"none":"block"
+        });
     }
 render(){
-    return(<div id="box" >
+     return(<div id="box" style={{display:this.state.display}}> {/*<点击消失>*/}
         <div id="box-left">
             <ul>
                 <li class="dropdown">
@@ -62,17 +64,43 @@ render(){
     }
 }
 class SAP2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {display:"none"};
+
+    }
+
+    handleClick() {
+        this.setState({display:this.state.display=="none"?"block":"none"});
+    }
     render(){
-        return(<div id="box2" >
-            <div id="box2-top">
-              <ul>
-                  <li>首页</li>
-                  <li>3D球型图</li>
-                  <li>楼宇视图</li>
-                  <li>人员轨迹</li>
-                  <li>热力图</li>
-              </ul>
+        return(<div id="box2"  >
+            <div id="box2-left">
+                <div >
+                    <a href={""}>首页</a>
+
+                </div>
+                <div onClick={this.handleClick.bind(this)}>
+                    功能
+                    <div id={"sp"}   style={{display:this.state.display}}>
+
+                        <span class="span">楼宇图</span>
+                        <span class="span">热力图</span>
+                        <span class="span">3D球型图</span>
+                        <span class="span">人员行走路径</span>
+                </div>
+                </div>
+                 <div onClick={this.handleClick.bind(this)}>
+                     其他
+                     <div  style={{display:this.state.display=="none"?"block":"none"}}>
+                         <span class="span">使用说明</span>
+                         <span class="span">版本维护</span>
+
+                     </div>
+                 </div>
+
             </div>
+            <div id={"box2-right"}></div>
 
         </div>)}
 
@@ -89,7 +117,7 @@ class App extends Component {
            <img src={logo} className="App-logo" alt="logo" />
         </header>
            <SAP id={"SAP"}/>
-          <SAP2/>
+           <SAP2/>
 
 
           <footer>

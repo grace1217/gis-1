@@ -152,3 +152,25 @@ color: white;
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+#box2-left{
+  width:200px;
+  height:500px;
+  background-color:blueviolet ;
+  text-align: center;
+  color:white;
+  font:700 24px/50px "simsun"
+}
+#box2-left a{
+  text-decoration: none;
+   color:white;
+
+}
+#sp{
+  display: none;
+}
+.span{
+  display: block;
+  font:700 15px/40px "simsun"
+}
