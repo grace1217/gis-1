@@ -11,11 +11,18 @@
   height: 80px;
   float:right;
   margin-top: -50px;
+
+}
+#time{
+  width:80px;
+  height: 30px;
+  margin-top: -55px;
 }
 img{
   animation: App-logo-spin infinite 20s linear;
-  margin-top:90px;
+  margin :90px 0 0 150px;
   height: 200px;
+  text-align: center;
 
 }
 .App-logo-name{
@@ -70,20 +77,17 @@ li .a, .dropbtn
   text-decoration:none;
 }
 
-li .a:hover
-{
-  background-color:#111;
-}
 
-.dropdown
+
+.dropdown:hover
 {
   display:block;
+  background-color: blue;
 }
 
 .dropdown-content
 {
   display:none;
-  position:absolute;
   background-color:#f9f9f9;
   min-width:160px;
   box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -98,7 +102,7 @@ li .a:hover
 }
 
 .dropdown-content .a:hover {
-  background-color: #f1f1f1}
+  background-color: grey}
 
 .dropdown:hover .dropdown-content
 {
@@ -117,13 +121,31 @@ li .a:hover
 
 }
 .login{
-  width:40px;
-  height:20px;
+  width:55px;
+  height:30px;
   color:white;
 background-color: #6e6964;
-  border:2px solid #6e6964;
-}
+  border:2px solid blue;
+  font:700 15px/30px "simsun" ;
+  text-align: center;
 
+}
+#shuru{ /* 先将登陆框设置为隐藏*/
+   visibility: hidden;
+  color:white;
+  margin: auto;
+}
+#shuru1{ /* 先将注册框设置为透明度0*/
+
+  display: none;
+  color:white;
+  margin: -50px auto;
+}
+#success{
+  opacity: 0;
+  color: white;
+ top:50px;
+}
 #box-right{
   width: 200px;
   height:500px;
@@ -146,6 +168,7 @@ color: white;
   text-align: center;
   font:700 20px/70px "simsun";
   margin-bottom: 0px;
+  position: absolute;
 }
 
 @keyframes App-logo-spin {
@@ -154,14 +177,27 @@ color: white;
 }
 
 
+/*#box2{
+  display: none;
+}*/
+
 #box2-left{
   width:200px;
   height:500px;
+  float:left;
   background-color:blueviolet ;
   text-align: center;
   color:white;
   font:700 24px/50px "simsun"
 }
+#box2-left div{
+  cursor: pointer;
+}
+ span:hover{
+  background-color: slategrey ;
+}
+#box2-left .shadow:hover {
+  background-color: #b1badf}
 #box2-left a{
   text-decoration: none;
    color:white;
@@ -173,4 +209,20 @@ color: white;
 .span{
   display: block;
   font:700 15px/40px "simsun"
+}
+#qita{
+  visibility: hidden;
+}
+#box2-shuju{
+width:100%;
+  height:500px;
+  margin: auto 200px;
+    background-color: #0b97c4;
+
+}
+
+
+#welcome{
+  color:white;
+  float:right;
 }
