@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-            <h1 className="App-title">白金组</h1>
+            <h1 className="App-title">123</h1>
             <h3 className="App-title">gis可视化设计项目</h3>
             <p className="App-logo-name">中国移动</p>
            <img src={logo} className="App-logo" alt="logo" />
