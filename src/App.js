@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SAP from "./Component/SAP"
@@ -17,7 +17,7 @@ class App extends Component {
         <header className="App-header">
             <h1 className="App-title">123</h1>
             <h3 className="App-title">gis可视化设计项目</h3>
-            <p className="App-logo-name">中国移动</p>
+            <p className="App-logo-name">水水水水水水水</p>
            <img src={logo} className="App-logo" alt="logo" />
             <Clock/>
         </header>
